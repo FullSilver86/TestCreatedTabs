@@ -2,7 +2,7 @@
 from os import listdir
 import requests
 
-#Get TAB from app.py file
+#Get route from app.py file
 def get_route_app():
     route = []
     try:
@@ -13,7 +13,7 @@ def get_route_app():
         print("Python script is in wrong folder move it to /var/www/flaga/")
 
 
-#Get TAB from templates/*.html files
+#Get route from templates/*.html files
 def get_route_html():
     try:
         html_pages = [page.rstrip(".html") for page in listdir("templates")]
